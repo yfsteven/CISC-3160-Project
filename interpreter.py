@@ -279,9 +279,13 @@ def interpret(source):
 
 if __name__ == "__main__":
     if len(sys.argv) > 1:
-        with open(sys.argv[1]) as f:
-            src = f.read()
+        try: 
+            with open(sys.argv[1]) as f:
+                src = f.read()
+            interpret(src)
+        except Exception as e:
+            print(f"Unexpected error has occurred: {e}")
+            exit()
     else:
-        print("Enter program (Ctrl-D to end):")
-        src = sys.stdin.read()
-    interpret(src)
+        print("Usage: python interpreter.py <file>\n")
+        exit()
