@@ -1,6 +1,9 @@
 # CISC-3160-Project
 Interpreter written in Python by Yan Chao Feng
 
+**Usage: python interpreter.py <file>
+
+
 The following defines a simple language in which a program consists of assignment statements, and each variable is assumed to be of integer type. For simplicity, only operators that produce integer values are included. An assignment that starts with the keyword 'let' defines a single-assignment variable, where the expression on the right-hand side may contain constants or previously defined single-assignment variables only.
 
 Write an interpreter for this language in a programming language of your choice. Given a program, your interpreter should be able to do the following:
