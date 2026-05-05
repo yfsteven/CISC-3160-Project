@@ -118,6 +118,12 @@ let x = 1;
 
 
 y = 2;
+
+
 let z = x+ y;
+
+
 Output 4
+
+
 error, normal variables in let expression
