@@ -9,6 +9,8 @@ detect syntax errors;
 report the use of uninitialized variables;
 report an error if a let expression contains normal (non-single-assignment) variables; and
 if no error is detected, execute the assignments and print the values of all variables after all assignments have been completed.
+
+
 Program:
 	Assignment*
 
@@ -41,30 +43,80 @@ Digit:
 	0|1|...|9
 
 Sample inputs and outputs
+
+
 Input 1
+
+
 x = 001;
+
+
 Output 1
+
+
 error
+
+
 Input 2
+
+
 x_2 = 0;
+
+
 Output 2
+
+
 x_2 = 0
+
+
 Input 3
+
+
 x = 0
+
+
 y = x;
+
+
 z = ---(x+y);
+
+
 Output 3
+
+
 error
+
+
 Input 4
+
+
 let x = 1;
+
+
 y = 2;
+
+
 z = ---(x+y)*(x+-y);
+
+
 Output 4
+
+
 x = 1
+
+
 y = 2
+
+
 z = 3
+
+
 Input 5
+
+
 let x = 1;
+
+
 y = 2;
 let z = x+ y;
 Output 4
